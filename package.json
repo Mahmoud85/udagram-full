@@ -6,7 +6,7 @@
     "build:api": "cd udagram-api && npm run build",
     "build:frontend": "cd udagram-frontend && npm run build",
     "deploy:api": "cd udagram-api && npm run deploy",
-    "client:deploy": "cd udagram-frontend && npm run deploy",
+    "frontend:deploy": "cd udagram-frontend && npm run deploy",
     "test:api": "cd udagram-api && npm run test",
     "test:frontend": "cd frontend && npm run test",
     "e2e": "cd frontend && npm run e2e"
