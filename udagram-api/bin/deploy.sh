@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
-# echo "initializing elastic Beanstalk repo..."
-# eb init udagram-api -p "64bit Amazon Linux 2 v5.4.10 running Node.js 14" --region us-east-1
-
-# echo "create environement and set it as default..."
-# eb create -d udagram-api-dev
+echo "initializing elastic Beanstalk repo..."
+eb init udagram-api -p "64bit Amazon Linux 2 v5.4.10 running Node.js 14" --region us-east-1
 
 echo "connects to the created Elastic Beanstalk env..."
 eb use udagram-api-dev
