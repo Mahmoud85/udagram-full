@@ -34,6 +34,8 @@ The pipeline leverages 9 scripts defined in the `package.json` file in the root 
 
 ```
 
+- important note: if the environement bucket is not created , please use this command to create it before running the deploy of backend `eb create -d udagram-api-dev`
+
 ---
 
 ## Jobs
