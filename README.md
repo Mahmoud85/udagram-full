@@ -26,15 +26,39 @@ The project can run but is missing some information to connect to the database a
 
 ```
 
+## Environment Variables
+
+The API relies on several environment variables to function. `dotenv` is already included in the `package.json`file, so it is only necessary to create a `.env` file with the following variables:
+
+| Name                  |                         Value                         |
+| --------------------- | :---------------------------------------------------: |
+| POSTGRES_HOST         |         The url of the RDS database instance          |
+| POSTGRES_DB           |                       postgres                        |
+| POSTGRES_USERNAME     | The username specified when creating the RDS instance |
+| POSTGRES_PASSWORD     | The password specified when creating the RDS instance |
+| DB_PORT               |  The port of the RDS db instance (5432 for postgres)  |
+| AWS_REGION            |  The AWS region you used to provision RDS, S3 and EB  |
+| AWS_PROFILE           |                   Your AWS profile                    |
+| AWS_BUCKET            | The name of the S3 bucket used to host the front end  |
+| AWS_ACCES_KEY_ID      |                 Your AWS acces key ID                 |
+| AWS_SECRET_ACCESS_KEY |              Your AWS secret access key               |
+| JWT_SECRET            |                         Token                         |
+
+**IMPORTANT: .env should be added to .gitignore and never committed to a public repo.**
+
+---
+
 ### Installation
 
 Provision the necessary AWS services needed for running the application:
 
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
+1. In AWS, provision a publicly available RDS database running Postgres.
+1. In AWS, provision a s3 bucket for hosting the uploaded files.
 1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
 1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+
+- important note: if the bucket is not created , please use this command to create it before running the deploy of backend `eb create -d udagram-api-dev`
 
 ## Testing
 
