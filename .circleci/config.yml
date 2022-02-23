@@ -38,6 +38,7 @@ workflows:
   udagram:
     jobs:
       - deploy
-filters:
-    branches:
-      only: master
+      - build_udagram: # << the job to conditionally run based on the filter-by-branch-name.
+          filters:
+            branches:
+              only: master
