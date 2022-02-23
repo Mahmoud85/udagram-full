@@ -86,6 +86,6 @@ The e2e tests are using Protractor and Jasmine.
 
 [License](LICENSE.txt)
 
-# Building Badge:
+# Building Status:
 
-[![Udagram-Anas](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/Mahmoud85/udagram-full)
+[![udagram-anas](https://circleci.com/gh/Mahmoud85/udagram-full.svg?style=svg)](https://app.circleci.com/pipelines/github/Mahmoud85/udagram-full)
