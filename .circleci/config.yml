@@ -38,3 +38,6 @@ workflows:
   udagram:
     jobs:
       - deploy
+filters:
+    branches:
+      only: master

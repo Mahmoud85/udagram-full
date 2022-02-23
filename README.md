@@ -85,3 +85,7 @@ The e2e tests are using Protractor and Jasmine.
 ## License
 
 [License](LICENSE.txt)
+
+# Building Badge:
+
+[![Udagram-Anas](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/Mahmoud85/udagram-full)
